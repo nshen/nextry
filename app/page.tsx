@@ -1,11 +1,8 @@
-import { Button } from '@/components/ui/button';
-import { WagmiAccount } from '@/components/wagmi-account';
-
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 export default function Home() {
     return (
-        <div className='m-10'>
-            <Button>Click Me</Button>
-            <WagmiAccount />
+        <div >
+            <ConnectButton accountStatus="full" chainStatus="full" showBalance={false} />
         </div>
     );
 }

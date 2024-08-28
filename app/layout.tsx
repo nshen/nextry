@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import '@rainbow-me/rainbowkit/styles.css';
 import { Providers } from "./providers";
 import { headers } from 'next/headers'
 import { cookieToInitialState } from 'wagmi'
-import { getConfig } from '@/lib/wagmi'
+import { config } from '@/lib/wagmi'
 
 export const metadata: Metadata = {
     title: "Web3 Starter",
@@ -16,7 +17,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     const initialState = cookieToInitialState(
-        getConfig(),
+        config,
         headers().get('cookie')
     )
     return (
