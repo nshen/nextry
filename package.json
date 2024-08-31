@@ -1,0 +1,20 @@
+{
+  "name": "nextry",
+  "version": "0.0.1",
+  "description": "Next.js Foundry Stack",
+  "scripts": {
+    "anvil": "cd ./foundry && anvil --config-out anvil.json",
+    "deploy": "cd ./foundry && forge script script/Deploy.s.sol --rpc-url anvil --broadcast --legacy",
+    "dev": "cd ./next && pnpm run dev"
+  },
+  "keywords": [
+    "Web3",
+    "Solidity",
+    "Nextjs",
+    "Shadcn",
+    "Wagmi",
+    "Rainbowkit"
+  ],
+  "author": "nshen",
+  "license": "MIT"
+}

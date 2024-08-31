@@ -1,7 +1,7 @@
 'use client'
 
 import { http, cookieStorage, createConfig, createStorage } from 'wagmi'
-import { mainnet, sepolia } from 'wagmi/chains'
+import { mainnet, sepolia, foundry } from 'wagmi/chains'
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 
 /* export function getConfig() {
@@ -22,7 +22,7 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 export const config = getDefaultConfig({
     appName: 'My Web3 Starter App',
     projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '',
-    chains: [mainnet, sepolia],
+    chains: [mainnet, sepolia, foundry],
     storage: createStorage({
         storage: cookieStorage,
     }),
@@ -30,13 +30,13 @@ export const config = getDefaultConfig({
     transports: {
         [mainnet.id]: http(),
         [sepolia.id]: http(),
+        [foundry.id]: http(),
     },
 });
 
 
 declare module 'wagmi' {
     interface Register {
-        // config: ReturnType<typeof getConfig>
         config: typeof config
     }
 }

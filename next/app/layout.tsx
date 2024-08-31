@@ -7,8 +7,8 @@ import { cookieToInitialState } from 'wagmi'
 import { config } from '@/lib/wagmi'
 
 export const metadata: Metadata = {
-    title: "Web3 Starter",
-    description: "Nextjs + Wagmi",
+    title: "Nextry",
+    description: "Next.js Foundry Stack",
 };
 
 export default function RootLayout({
