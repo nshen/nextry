@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "scripts": {
     "generate": "wagmi generate && node generate-address.mjs",
-    "predev":"wagmi generate && node generate-address.mjs",
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",

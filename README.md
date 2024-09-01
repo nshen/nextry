@@ -18,8 +18,8 @@ Solidity: `Foundry`
 ## 开发流程
 
 1. `pnpm run anvil` 打开本地链
-2. `pnpm run deploy` 部署 foundry 合约到本地链
-3. `pnpm run dev` 打开前端（自动生成合约 hooks 和地址）
+2. `pnpm run deploy` 部署 foundry 合约到本地链，并将 `abi` 和 `address` 同步给前端
+3. `pnpm run dev` 运行 next.js 前端
 
 ## 开发准备（可选）
 

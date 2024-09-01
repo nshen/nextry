@@ -20,17 +20,17 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 
 
 export const config = getDefaultConfig({
-    appName: 'My Web3 Starter App',
+    appName: 'nextry',
     projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '',
-    chains: [mainnet, sepolia, foundry],
+    chains: [foundry, mainnet, sepolia],
     storage: createStorage({
         storage: cookieStorage,
     }),
     ssr: true, // If your dApp uses server side rendering (SSR)
     transports: {
+        [foundry.id]: http(),
         [mainnet.id]: http(),
         [sepolia.id]: http(),
-        [foundry.id]: http(),
     },
 });
 
@@ -40,3 +40,4 @@ declare module 'wagmi' {
         config: typeof config
     }
 }
+

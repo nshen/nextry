@@ -50,6 +50,7 @@ function main() {
         `${TARGET_DIR}address-map.ts`,
         `export const addressMap = ${JSON.stringify(allChains)} as const;`,
     );
+    console.log('✔ Writing to \x1b[90mgenerated/address-map.ts\x1b[0m')
 }
 
 try {
