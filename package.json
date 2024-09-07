@@ -4,10 +4,11 @@
   "description": "Next.js Foundry Stack",
   "scripts": {
     "anvil": "cd ./foundry && anvil --config-out anvil.json",
-    "deploy": "cd ./foundry && forge script script/Deploy.s.sol --rpc-url anvil --broadcast --legacy",
+    "deploy": "cd ./foundry && forge script script/Deploy.s.sol:DeployScript --rpc-url anvil --broadcast --legacy",
     "postdeploy": "cd ./next && npm run generate",
     "dev": "cd ./next && npm run dev",
-    "test": "cd ./foundry && forge test"
+    "test": "cd ./foundry && forge test",
+    "deploy:sepolia": "cd ./foundry && forge script script/Deploy.s.sol:DeployScript --rpc-url sepolia --broadcast --verify"
   },
   "keywords": [
     "Web3",
