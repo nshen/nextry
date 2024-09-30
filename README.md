@@ -40,6 +40,22 @@ verify contract 需要科学网络环境，如果没有成功，可以用类似�
 
 `forge verify-contract <address> OurToken --chain-id 11155111`
 
+## 常用依赖（可选）
+
+进入 foundry 目录
+
+### openzeppelin
+
+1. `forge install OpenZeppelin/openzeppelin-contracts --no-commit`
+2. Add `@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/` in remappings.txt
+
+
+### chainlink
+
+1. `forge install smartcontractkit/chainlink-brownie-contracts --no-commit`
+2. Add `@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/src/` in remapping.txt
+
+
 ## 开发准备（可选）
 
 1. Metamask 导入钱包 Anvil 默认账号助记词 `test test test test test test test test test test test junk`

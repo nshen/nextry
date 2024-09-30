@@ -12,8 +12,9 @@
   },
   "keywords": [
     "Web3",
-    "Solidity",
     "Nextjs",
+    "Foundry",
+    "Solidity",
     "Shadcn",
     "Wagmi",
     "Rainbowkit"
