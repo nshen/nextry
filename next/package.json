@@ -3,35 +3,42 @@
   "version": "0.0.1",
   "scripts": {
     "generate": "wagmi generate && node generate-address.mjs",
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
-    "@rainbow-me/rainbowkit": "^2.1.5",
-    "@tanstack/react-query": "^5.52.2",
+    "@rainbow-me/rainbowkit": "^2.2.0",
+    "@tanstack/react-query": "^5.61.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.436.0",
-    "next": "15.0.0-rc.1",
-    "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "next": "15.1.0",
+    "next-auth": "5.0.0-beta.25",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "^2.20.1",
-    "wagmi": "^2.12.7"
+    "viem": "^2.21.51",
+    "wagmi": "^2.13.0"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@wagmi/cli": "^2.1.15",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
+    "@wagmi/cli": "^2.1.18",
     "eslint": "^8",
-    "eslint-config-next": "15.0.0-rc.0",
+    "eslint-config-next": "15.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.0.1",
+      "@types/react-dom": "19.0.2"
+    }
   }
 }

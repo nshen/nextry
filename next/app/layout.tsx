@@ -11,14 +11,16 @@ export const metadata: Metadata = {
     description: "Next.js Foundry Stack",
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+export default async function RootLayout(
+    {
+        children,
+    }: Readonly<{
+        children: React.ReactNode;
+    }>
+) {
     const initialState = cookieToInitialState(
         config,
-        headers().get('cookie')
+        (await headers()).get('cookie')
     )
     return (
         <html lang="en">
