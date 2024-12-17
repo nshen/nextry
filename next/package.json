@@ -14,6 +14,7 @@
     "@tanstack/react-query": "^5.61.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "iron-session": "^8.0.4",
     "lucide-react": "^0.436.0",
     "next": "15.1.0",
     "next-auth": "5.0.0-beta.25",
@@ -22,7 +23,7 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "viem": "^2.21.51",
-    "wagmi": "^2.13.0"
+    "wagmi": "^2.14.3"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,13 +1,11 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Counter from '@/components/counter';
+import AppBar from '@/components/ui/appbar';
 
 export default function Home() {
     return (
-        <div className='w-full h-screen flex flex-col'>
-            <div className='w-full p-4 flex justify-end'>
-                <ConnectButton accountStatus="full" chainStatus="full" showBalance={false} />
-            </div>
-
+        <div className='w-full h-screen flex flex-col gap-4'>
+            <AppBar />
             <div className='flex justify-center'>
                 <Counter />
             </div>
