@@ -2,9 +2,12 @@
 
 Nextry = Next.js + Foundry
 
+- Foundry build 时自动生成 React 自定义 hook 到 Next.js 目录
+- 内置 SIWE 签名登陆实现
+
 ## 技术栈
 
-Frontend: `Next.js 15RC` + `Shadcn` + `Wagmi/Wagmi cli` + `Rainbowkit`
+Frontend: `Next.js 15.1` + `Next-Auth v5` + `Shadcn` + `Wagmi/Wagmi cli` + `Rainbowkit`
 
 Solidity: `Foundry`
 
