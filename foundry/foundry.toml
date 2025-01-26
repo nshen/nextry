@@ -26,6 +26,7 @@ polygonZkEvm = "https://polygonzkevm-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}
 polygonZkEvmTestnet = "https://polygonzkevm-testnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
 zkSyncTestnet = "https://testnet.era.zksync.dev"
 zkSync = "https://mainnet.era.zksync.io"
+berachainBartio="https://berachain-bartio.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 
 [invariant]

@@ -43,6 +43,27 @@ verify contract 需要科学网络环境，如果没有成功，可以用类似�
 
 `forge verify-contract <address> OurToken --chain-id 11155111`
 
+## 部署到其他链
+
+首先确保foundry 目录中的 `foundry.toml` 中有对应的 `rpc_endpoints` 比如增加熊链
+
+`berachainBartio="https://berachain-bartio.g.alchemy.com/v2/${ALCHEMY_API_KEY}"`
+
+然后在外部package.json 增加命令如下，`--rpc-url` 指向 `berachainBartio`
+
+```json
+
+{
+  ...
+  "scripts": {
+    ...
+    "deploy:berachainBartio": "cd ./foundry && forge script script/Deploy.s.sol:DeployScript --rpc-url berachainBartio --broadcast --verify"
+  },
+}
+```
+
+
+
 ## 常用依赖（可选）
 
 进入 foundry 目录

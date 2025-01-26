@@ -8,7 +8,8 @@
     "postdeploy": "cd ./next && npm run generate",
     "dev": "cd ./next && npm run dev",
     "test": "cd ./foundry && forge test",
-    "deploy:sepolia": "cd ./foundry && forge script script/Deploy.s.sol:DeployScript --rpc-url sepolia --broadcast --verify"
+    "deploy:sepolia": "cd ./foundry && forge script script/Deploy.s.sol:DeployScript --rpc-url sepolia --broadcast --verify",
+    "deploy:berachainBartio": "cd ./foundry && forge script script/Deploy.s.sol:DeployScript --rpc-url berachainBartio --broadcast --verify"
   },
   "keywords": [
     "Web3",
